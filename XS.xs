@@ -272,7 +272,8 @@ _readSubtreeToPerl(reader, flags, ns_map, free_ns_index, read_siblings)
                     av_push(av, newRV_noinc((SV*)attrs));
                 }
 	      } else {
-                  av_push(av, &PL_sv_undef); /* no attributes */
+                av_push(av, newSV(0)); /* no attributes */
+
 	      }
 	      if (flags & XCT_LINE_NUMBERS)
 		av_push(av, newSViv(xmlTextReaderGetParserLineNumber(reader)));

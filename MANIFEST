@@ -1,6 +1,7 @@
 Makefile.PL
 Changes
 MANIFEST
+META.yml # Will be created by "make dist"
 README
 XS.pm
 XS.xs
@@ -12,4 +13,4 @@ t/02-feature.t
 t/boilerplate.t
 t/pod-coverage.t
 t/pod.t
-META.yml                                 Module meta-data (added by MakeMaker)
+META.json                                Module JSON meta-data (added by MakeMaker)
